@@ -1,0 +1,188 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.973\fwidth,
+height=\fheight,
+at={(0\fwidth,0\fheight)},
+scale only axis,
+xmin=0,
+xmax=25,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of ARNI steps},
+ymin=0.33,
+ymax=0.38,
+ylabel style={font=\color{white!15!black}},
+ylabel={AUPR},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={DREAM5 Network 1},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.33228\\
+2	0.36542\\
+3	0.37121\\
+4	0.37172\\
+5	0.37103\\
+6	0.37011\\
+7	0.36907\\
+8	0.36811\\
+9	0.36719\\
+10	0.3664\\
+11	0.36569\\
+12	0.36503\\
+13	0.36446\\
+14	0.36391\\
+15	0.36339\\
+16	0.36293\\
+17	0.36251\\
+18	0.3621\\
+19	0.36174\\
+20	0.36138\\
+21	0.36105\\
+22	0.36074\\
+23	0.36045\\
+24	0.36016\\
+25	0.35989\\
+};
+\addlegendentry{BS=100}
+
+\addplot [color=mycolor2, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.33718\\
+2	0.36889\\
+3	0.37378\\
+4	0.37372\\
+5	0.37291\\
+6	0.37192\\
+7	0.37089\\
+8	0.36992\\
+9	0.36903\\
+10	0.36823\\
+11	0.36751\\
+12	0.36686\\
+13	0.36629\\
+14	0.36576\\
+15	0.36527\\
+16	0.36483\\
+17	0.36442\\
+18	0.36402\\
+19	0.36367\\
+20	0.36334\\
+21	0.36304\\
+22	0.36274\\
+23	0.36247\\
+24	0.3622\\
+25	0.36195\\
+};
+\addlegendentry{BS=200}
+
+\addplot [color=mycolor3, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.33946\\
+2	0.36992\\
+3	0.37452\\
+4	0.37439\\
+5	0.37346\\
+6	0.37241\\
+7	0.37136\\
+8	0.37033\\
+9	0.36943\\
+10	0.36868\\
+11	0.36796\\
+12	0.36731\\
+13	0.36674\\
+14	0.36617\\
+15	0.36566\\
+16	0.36522\\
+17	0.36482\\
+18	0.36444\\
+19	0.36408\\
+20	0.36374\\
+21	0.36344\\
+22	0.36316\\
+23	0.36288\\
+24	0.36262\\
+25	0.36237\\
+};
+\addlegendentry{BS=300}
+
+\addplot [color=mycolor4, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.34095\\
+2	0.37077\\
+3	0.37525\\
+4	0.37503\\
+5	0.37415\\
+6	0.37304\\
+7	0.37199\\
+8	0.371\\
+9	0.37012\\
+10	0.36934\\
+11	0.36865\\
+12	0.368\\
+13	0.36744\\
+14	0.36691\\
+15	0.36642\\
+16	0.36598\\
+17	0.36559\\
+18	0.3652\\
+19	0.36486\\
+20	0.36454\\
+21	0.36421\\
+22	0.36392\\
+23	0.36365\\
+24	0.36337\\
+25	0.36312\\
+};
+\addlegendentry{BS=400}
+
+\addplot [color=mycolor5, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.34154\\
+2	0.37091\\
+3	0.37515\\
+4	0.37487\\
+5	0.37396\\
+6	0.37285\\
+7	0.37182\\
+8	0.3708\\
+9	0.36992\\
+10	0.36911\\
+11	0.36844\\
+12	0.3678\\
+13	0.36722\\
+14	0.36669\\
+15	0.36619\\
+16	0.36574\\
+17	0.36534\\
+18	0.36497\\
+19	0.36461\\
+20	0.36428\\
+21	0.36396\\
+22	0.36366\\
+23	0.36338\\
+24	0.36314\\
+25	0.36288\\
+};
+\addlegendentry{BS=500}
+
+\end{axis}
+\end{tikzpicture}%

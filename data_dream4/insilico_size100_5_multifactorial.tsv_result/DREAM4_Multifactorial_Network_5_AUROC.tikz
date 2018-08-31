@@ -1,0 +1,88 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.958\fwidth,
+height=\fheight,
+at={(0\fwidth,0\fheight)},
+scale only axis,
+xmin=1,
+xmax=5,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of ARNI steps},
+ymin=0.715,
+ymax=0.75,
+ylabel style={font=\color{white!15!black}},
+ylabel={AUROC},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={DREAM4 Multifactorial Network5},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.72273\\
+2	0.73183\\
+3	0.72795\\
+4	0.72437\\
+5	0.71965\\
+};
+\addlegendentry{BS=100}
+
+\addplot [color=mycolor2, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.72664\\
+2	0.73241\\
+3	0.72692\\
+4	0.72186\\
+5	0.71726\\
+};
+\addlegendentry{BS=200}
+
+\addplot [color=mycolor3, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.73525\\
+2	0.73651\\
+3	0.731\\
+4	0.72603\\
+5	0.72084\\
+};
+\addlegendentry{BS=300}
+
+\addplot [color=mycolor4, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.73705\\
+2	0.74523\\
+3	0.74013\\
+4	0.73444\\
+5	0.72892\\
+};
+\addlegendentry{BS=400}
+
+\addplot [color=mycolor5, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.73775\\
+2	0.74627\\
+3	0.73904\\
+4	0.73276\\
+5	0.72676\\
+};
+\addlegendentry{BS=500}
+
+\end{axis}
+\end{tikzpicture}%

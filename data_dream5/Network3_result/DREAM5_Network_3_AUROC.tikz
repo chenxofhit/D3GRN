@@ -1,0 +1,95 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.973\fwidth,
+height=\fheight,
+at={(0\fwidth,0\fheight)},
+scale only axis,
+xmin=0,
+xmax=25,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of ARNI steps},
+ymin=0.54,
+ymax=0.66,
+ylabel style={font=\color{white!15!black}},
+ylabel={AUROC},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={DREAM5 Network 3},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.54637\\
+2	0.57014\\
+3	0.5888\\
+4	0.60362\\
+5	0.61119\\
+6	0.61848\\
+7	0.62362\\
+8	0.62941\\
+9	0.63186\\
+10	0.63701\\
+11	0.64166\\
+12	0.64447\\
+13	0.64509\\
+14	0.64678\\
+15	0.64788\\
+16	0.64964\\
+17	0.65082\\
+18	0.65043\\
+19	0.6508\\
+20	0.65112\\
+21	0.65093\\
+22	0.65103\\
+23	0.65116\\
+24	0.65195\\
+25	0.65204\\
+};
+\addlegendentry{BS=100}
+
+\addplot [color=mycolor2, line width=2.0pt]
+  table[row sep=crcr]{%
+1	0.55067\\
+2	0.57559\\
+3	0.59488\\
+4	0.61107\\
+5	0.61727\\
+6	0.62758\\
+7	0.63218\\
+8	0.63544\\
+9	0.63766\\
+10	0.6404\\
+11	0.64383\\
+12	0.64624\\
+13	0.64679\\
+14	0.64836\\
+15	0.64963\\
+16	0.65191\\
+17	0.65283\\
+18	0.65306\\
+19	0.65334\\
+20	0.65368\\
+21	0.65363\\
+22	0.65382\\
+23	0.65376\\
+24	0.65407\\
+25	0.65404\\
+};
+\addlegendentry{BS=200}
+
+\end{axis}
+\end{tikzpicture}%
